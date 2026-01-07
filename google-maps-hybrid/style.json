@@ -3,7 +3,6 @@
     "name": "Google Maps Hybrid",
     "id": "google-maps-hybrid",
     "description": "Google Maps Hybrid basemap with a warm atmosphere.",
-    "attribution": "google",
     "layer": {
         "id": "google-tiles",
         "type": "raster",
