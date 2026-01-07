@@ -1,0 +1,33 @@
+{
+    "version": "1",
+    "name": "Google Maps Hybrid",
+    "id": "google-maps-hybrid",
+    "description": "Google Maps Hybrid basemap with a warm atmosphere.",
+    "attribution": "google",
+    "layer": {
+        "id": "google-tiles",
+        "type": "raster",
+        "source": "google",
+        "minzoom": 0,
+        "maxzoom": 19
+    },
+    "source": {
+        "type": "raster",
+        "tiles": [
+            "https://mt0.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}",
+            "https://mt1.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}",
+            "https://mt2.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}",
+            "https://mt3.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}"
+        ],
+        "tileSize": 256,
+        "attribution": "© Google"
+    },
+    "atmosphere": {
+        "sky-color": "rgb(31, 107, 214)",
+        "sky-horizon-blend": 0.5,
+        "horizon-color": "rgb(194, 172, 95)",
+        "horizon-fog-blend": 0.5,
+        "fog-color": "rgb(255, 25, 25)",
+        "fog-ground-blend": 0.5
+    }    
+}
