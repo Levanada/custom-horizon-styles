@@ -1,0 +1,30 @@
+{
+    "version": "1",
+    "name": "Carto Dark (No Labels)",
+    "id": "carto-dark-nolabels",
+    "description": "Carto Dark basemap without labels, perfect for custom overlays.",
+    "layer": {
+        "id": "carto-dark-nolabels-tiles",
+        "type": "raster",
+        "source": "carto-dark-nolabels",
+        "minzoom": 0,
+        "maxzoom": 19
+    },
+    "source": {
+        "type": "raster",
+        "tiles": [
+            "https://a.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png",
+            "https://b.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png",
+            "https://c.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png"
+        ],
+        "tileSize": 256,
+        "attribution": "© CARTO © OpenStreetMap contributors"
+    },
+    "atmosphere": {
+        "sky-color": "rgb(9, 15, 94)",
+        "sky-horizon-blend": 0.5,
+        "horizon-color": "rgb(204, 160, 0)",
+        "horizon-fog-blend": 0.5
+    }
+}
+

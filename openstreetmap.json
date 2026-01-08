@@ -1,0 +1,30 @@
+{
+    "version": "1",
+    "name": "OpenStreetMap",
+    "id": "openstreetmap",
+    "description": "Classic OpenStreetMap basemap with a natural atmosphere.",
+    "layer": {
+        "id": "osm-tiles",
+        "type": "raster",
+        "source": "osm",
+        "minzoom": 0,
+        "maxzoom": 19
+    },
+    "source": {
+        "type": "raster",
+        "tiles": [
+            "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            "https://b.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            "https://c.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        ],
+        "tileSize": 256,
+        "attribution": "© OpenStreetMap contributors"
+    },
+    "atmosphere": {
+        "sky-color": "rgb(6, 91, 155)",
+        "sky-horizon-blend": 0.5,
+        "horizon-color": "rgb(255, 255, 255)",
+        "horizon-fog-blend": 0.5
+    }
+}
+

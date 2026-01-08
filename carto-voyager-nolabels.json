@@ -1,0 +1,30 @@
+{
+    "version": "1",
+    "name": "Carto Voyager (No Labels)",
+    "id": "carto-voyager-nolabels",
+    "description": "Carto Voyager basemap without labels, ideal for data visualization overlays.",
+    "layer": {
+        "id": "carto-voyager-nolabels-tiles",
+        "type": "raster",
+        "source": "carto-voyager-nolabels",
+        "minzoom": 0,
+        "maxzoom": 19
+    },
+    "source": {
+        "type": "raster",
+        "tiles": [
+            "https://a.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}.png",
+            "https://b.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}.png",
+            "https://c.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}.png"
+        ],
+        "tileSize": 256,
+        "attribution": "© CARTO © OpenStreetMap contributors"
+    },
+    "atmosphere": {
+        "sky-color": "rgb(135, 206, 250)",
+        "sky-horizon-blend": 0.5,
+        "horizon-color": "rgb(255, 255, 255)",
+        "horizon-fog-blend": 0.5
+    }
+}
+

@@ -1,0 +1,28 @@
+{
+    "version": "1",
+    "name": "ESRI World Imagery",
+    "id": "esri-world-imagery",
+    "description": "ESRI World Imagery satellite basemap with a realistic sky atmosphere.",
+    "layer": {
+        "id": "esri-imagery-tiles",
+        "type": "raster",
+        "source": "esri-imagery",
+        "minzoom": 0,
+        "maxzoom": 19
+    },
+    "source": {
+        "type": "raster",
+        "tiles": [
+            "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+        ],
+        "tileSize": 256,
+        "attribution": "© ESRI, USGS, NOAA"
+    },
+    "atmosphere": {
+        "sky-color": "rgb(31, 107, 214)",
+        "sky-horizon-blend": 0.5,
+        "horizon-color": "rgb(194, 172, 95)",
+        "horizon-fog-blend": 0.5
+    }
+}
+

@@ -1,0 +1,30 @@
+{
+    "version": "1",
+    "name": "Carto Voyager",
+    "id": "carto-voyager",
+    "description": "Carto Voyager basemap with a vibrant, colorful atmosphere.",
+    "layer": {
+        "id": "carto-voyager-tiles",
+        "type": "raster",
+        "source": "carto-voyager",
+        "minzoom": 0,
+        "maxzoom": 19
+    },
+    "source": {
+        "type": "raster",
+        "tiles": [
+            "https://a.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
+            "https://b.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
+            "https://c.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png"
+        ],
+        "tileSize": 256,
+        "attribution": "© CARTO © OpenStreetMap contributors"
+    },
+    "atmosphere": {
+        "sky-color": "rgb(135, 206, 250)",
+        "sky-horizon-blend": 0.5,
+        "horizon-color": "rgb(255, 255, 255)",
+        "horizon-fog-blend": 0.5
+    }
+}
+

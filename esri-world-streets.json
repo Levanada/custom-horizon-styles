@@ -1,0 +1,28 @@
+{
+    "version": "1",
+    "name": "ESRI World Street Map",
+    "id": "esri-world-streets",
+    "description": "ESRI World Street Map with detailed street information.",
+    "layer": {
+        "id": "esri-streets-tiles",
+        "type": "raster",
+        "source": "esri-streets",
+        "minzoom": 0,
+        "maxzoom": 19
+    },
+    "source": {
+        "type": "raster",
+        "tiles": [
+            "https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}"
+        ],
+        "tileSize": 256,
+        "attribution": "© ESRI"
+    },
+    "atmosphere": {
+        "sky-color": "rgb(135, 206, 250)",
+        "sky-horizon-blend": 0.5,
+        "horizon-color": "rgb(255, 255, 255)",
+        "horizon-fog-blend": 0.5
+    }
+}
+

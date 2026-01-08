@@ -1,0 +1,28 @@
+{
+    "version": "1",
+    "name": "ESRI World Topographic",
+    "id": "esri-world-topo",
+    "description": "ESRI World Topographic basemap with detailed terrain features.",
+    "layer": {
+        "id": "esri-topo-tiles",
+        "type": "raster",
+        "source": "esri-topo",
+        "minzoom": 0,
+        "maxzoom": 19
+    },
+    "source": {
+        "type": "raster",
+        "tiles": [
+            "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
+        ],
+        "tileSize": 256,
+        "attribution": "© ESRI"
+    },
+    "atmosphere": {
+        "sky-color": "rgb(135, 206, 250)",
+        "sky-horizon-blend": 0.5,
+        "horizon-color": "rgb(255, 255, 255)",
+        "horizon-fog-blend": 0.5
+    }
+}
+

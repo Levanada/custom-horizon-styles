@@ -1,0 +1,30 @@
+{
+    "version": "1",
+    "name": "Carto Positron (No Labels)",
+    "id": "carto-positron-nolabels",
+    "description": "Carto Positron basemap without labels, perfect for minimal data overlays.",
+    "layer": {
+        "id": "carto-positron-nolabels-tiles",
+        "type": "raster",
+        "source": "carto-positron-nolabels",
+        "minzoom": 0,
+        "maxzoom": 19
+    },
+    "source": {
+        "type": "raster",
+        "tiles": [
+            "https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
+            "https://b.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
+            "https://c.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png"
+        ],
+        "tileSize": 256,
+        "attribution": "© CARTO © OpenStreetMap contributors"
+    },
+    "atmosphere": {
+        "sky-color": "rgb(176, 224, 230)",
+        "sky-horizon-blend": 0.5,
+        "horizon-color": "rgb(255, 255, 255)",
+        "horizon-fog-blend": 0.5
+    }
+}
+
